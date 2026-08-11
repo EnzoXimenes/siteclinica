@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Médica - Contato</title>
+  <style>
+    .app-container { display: flex; height: 100vh; }
+    .sidebar { width: 220px; background-color: #333; color: #fff; padding: 15px; box-sizing: border-box; }
+    .sidebar a { display: block; color: #fff; text-decoration: none; margin-bottom: 15px; font-weight: bold; }
+    .sidebar a:hover { color: #aaa; }
+    .main-content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; }
+    header { height: 150px; background-color: #f4f4f4; text-align: center; }
+    header img { width: 100%; height: 100%; object-fit: cover; }
+    main { flex: 1; padding: 25px; color: #333; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
+    .form-group input, .form-group textarea { width: 100%; max-width: 400px; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; }
+    .form-group textarea { height: 100px; }
+    button { padding: 10px 20px; font-weight: bold; cursor: pointer; }
+    iframe { width: 100%; max-width: 500px; height: 300px; border: 0; margin-top: 15px; display: block; }
+    footer { background-color: #ddd; text-align: center; padding: 10px; color: #333; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar">
+      <a href="site.html">Página Principal</a>
+      <a href="sobre.html">Sobre a Clínica</a>
+      <a href="horario.html">Horário de Atendimento</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <div class="main-content">
+      <header>
+        <img src="img01.jpeg" alt="Atendimento Telefônico">
+      </header>
+      <main>
+        <h1>Fale Conosco</h1>
+        
+        <h3>Nossos Telefones:</h3>
+        <p>Celular: (21) 9127-3891</p>
+        <p>WhatsApp: (21) 9128-3682</p>
+
+        <h3>Endereço Completo:</h3>
+        <p>Estrada Intendente Magalhães, 488 - Campinho, Rio de Janeiro - RJ</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1141.1205710930803!2d-43.353803922070774!3d-22.88026904364657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9962e955abfa8b%3A0x7985add539b7a097!2sCamim%20Cl%C3%ADnica%20Medica%20Campinho!5e1!3m2!1spt-BR!2sbr!4v1786487630919!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <br><hr><br>
+
+        <h3>Formulário de Contato</h3>
+        <form name="cadastro" onsubmit="alert('Enviei o formulário');" action="#">
+          <div class="form-group">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+          </div>
+          
+          <div class="form-group">
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Assunto:</label>
+            <input type="text" name="assunto" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Mensagem:</label>
+            <textarea name="mensagem" required></textarea>
+          </div>
+          
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </main>
+      <footer>
+        <p><b>Contato:</b> (21) 9127-3891 / (21) 9128-3682</p>
+        <p><b>Endereço:</b> Estrada Intendente Magalhães, 488 - Campinho, Rio de Janeiro</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
